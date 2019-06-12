@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BoxService } from './box.service';
 
 @Component({
   selector: 'app-box',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent implements OnInit {
+  bgColor: string;
 
-  constructor() { }
+  constructor(public box: BoxService) {}
 
   ngOnInit() {
+    this.bgColor = this.box.activeColor;
   }
-
 }
