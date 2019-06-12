@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BoxComponent } from './box/box.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoxComponent
+    BoxComponent,
+    FavoritesComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
