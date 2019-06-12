@@ -7,11 +7,7 @@ import { BoxService } from './box.service';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent implements OnInit {
-  bgColor: string;
+  constructor() {}
 
-  constructor(public box: BoxService) {}
-
-  ngOnInit() {
-    this.bgColor = this.box.activeColor;
-  }
+  ngOnInit() {}
 }
