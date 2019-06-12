@@ -1,3 +1,5 @@
-<p>
-  favorites works!
-</p>
+<h1>Favorites</h1>
+
+<ul>
+  <li *ngFor="let fav of favorites | async">{{fav}}</li>
+</ul>
