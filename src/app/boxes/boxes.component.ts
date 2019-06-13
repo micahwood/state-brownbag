@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxesComponent implements OnInit {
 
+  bgColor: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  update() {
+    this.bgColor = 'red';
   }
 
 }
